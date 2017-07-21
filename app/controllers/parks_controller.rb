@@ -7,6 +7,11 @@ class ParksController < ApplicationController
     json_response(@parks)
   end
 
+  def random
+    @park = Park.all.shuffle.sample
+    json_response(@park)
+  end
+
   def show
     @park = Park.find(params[:id])
     json_response(@park)
