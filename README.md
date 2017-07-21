@@ -15,38 +15,17 @@ This is API that returns details about state and national parks. You can search 
  rails server
 ```
 
-# API Endpoints
 
-### See All Parks
-* Method: `GET`
-* URL: `localhost:3000/parks`
 
-### See A Specific Park
-* Method: `GET`
-* URL: `localhost:3000/parks/:id`
-
-### Search By Park Name
-* Method: `GET`
-* URL: `localhost:3000/parks?name=`
-
-### Random Park
-* Method: `GET`
-* URL: `localhost:3000/park/random`
-
-### Create A Park
-* Method: `POST`
-* URL: `localhost:3000/parks`
-* Required Params: _name, city, state, category(national or state)_
-
-### Update A Park
-* Method: `PATCH`
-* URL: `localhost:3000/parks/:id`
-* Required Params: _name, city, state, category(national or state)_
-
-### Delete A Park
-* Method: `DELETE`
-* URL: `localhost:3000/parks/:id`
-
+|Usage | METHOD       | URL       | Params |
+| --------|:------------:| ---------:| ------:|
+|See All Parks | GET    | `localhost:3000/parks` |  |
+|See A Specific Park | GET    | `localhost:3000/parks/:id` |  |
+|Search By Park Name | GET    | `localhost:3000/parks?name=` | _name_ |
+|See A Random Park | GET    | `localhost:3000/park/random` |  |
+|Create A Park | POST    | `localhost:3000/parks` | _name, city, state, category(national or state)_ |
+|Update A Park | PATCH    | `localhost:3000/parks/:id` | _name, city, state, category(national or state)_ |
+|Delete A Park | DELETE    |`localhost:3000/parks/:id`|   | |
 
 
 
