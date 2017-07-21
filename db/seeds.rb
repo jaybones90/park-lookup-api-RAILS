@@ -7,8 +7,8 @@ class Seed
 
   def generate_parks
     categories = ["state","national"]
-    category = categories.shuffle.sample
     20.times do |i|
+      category = categories.shuffle.sample
       park = Park.create!(
         name: Faker::Space.galaxy,
         city: Faker::Address.city,

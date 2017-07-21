@@ -1,7 +1,7 @@
 class ParksController < ApplicationController
 
   def index
-    @parks = Parks.all
+    @parks = Park.all
     json_response(@parks)
   end
 
@@ -26,9 +26,6 @@ class ParksController < ApplicationController
   end
 
 private
-  def json_response(object, status = :ok)
-    render json: object, status: status
-  end
 
   def park_params
     params.permit(:name, :city, :state, :category)
