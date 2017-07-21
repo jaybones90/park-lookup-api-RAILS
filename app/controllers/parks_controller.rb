@@ -34,6 +34,9 @@ class ParksController < ApplicationController
   def destroy
     @park = Park.find(params[:id])
     @park.destroy
+    if @park.destroy
+      render status: 200, json: { message: "Park was successfully deleted"}
+    end
   end
 
 private
