@@ -31,6 +31,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
+  gem 'pry'
+  gem 'database_cleaner'
 end
 
 group :development do
