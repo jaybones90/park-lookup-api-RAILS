@@ -7,13 +7,13 @@ describe "search by name route", :type => :request do
 
   it 'returns parks with the correct name' do
     park = Park.all.first
-    get "/parks?name=#{park.name}"
+    get "/api/v1/parks?name=#{park.name}"
     expect(JSON.parse(response.body)[0]['name']).to eq("#{park.name}")
   end
 
   it 'returns status code 200' do
     park = Park.all.first
-    get "/parks?name=#{park.name}"
+    get "/api/v1/parks?name=#{park.name}"
     expect(response).to have_http_status(:success)
   end
 

@@ -5,7 +5,7 @@ describe "destroy park route", :type => :request do
 
   before do
     park = Park.all.first
-    delete "/parks/#{park.id}"
+    delete "/api/v1/parks/#{park.id}"
   end
 
   it 'deletes a park' do

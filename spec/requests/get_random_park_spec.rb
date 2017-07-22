@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "get all parks route", :type => :request do
   let!(:parks) { FactoryGirl.create_list(:park, 10)}
 
-  before { get '/park/random' }
+  before { get '/api/v1/park/random' }
 
   it 'returns a random park' do
     park = Park.find(JSON.parse(response.body)['id'])

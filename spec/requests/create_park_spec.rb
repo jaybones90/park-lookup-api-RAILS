@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "create a park route", :type => :request do
 
   before do
-    post '/parks', params: { name: "test name", city: "test city", state: "test state", category: "national"}
+    post '/api/v1/parks', params: { name: "test name", city: "test city", state: "test state", category: "national"}
   end
 
   it 'returns the parks name' do

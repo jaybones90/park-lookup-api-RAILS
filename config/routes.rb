@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   end
 
 
-  get '/park/random' => 'parks#random'
+  get '/api/v1/park/random' => 'api/v1/parks#random'
 
 end

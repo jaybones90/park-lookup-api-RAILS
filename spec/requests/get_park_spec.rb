@@ -6,7 +6,7 @@ describe "get park route", :type => :request do
 
 
   before do
-    get "/parks/#{park.id}"
+    get "/api/v1/parks/#{park.id}"
   end
 
   it 'returns a park' do

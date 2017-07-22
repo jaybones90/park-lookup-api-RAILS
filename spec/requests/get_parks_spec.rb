@@ -5,7 +5,7 @@ require 'rails_helper'
 describe "get all parks route", :type => :request do
   let!(:parks) { FactoryGirl.create_list(:park, 10)}
 
-  before { get '/parks' }
+  before { get '/api/v1/parks' }
 
   it 'returns all parks' do
     expect(JSON.parse(response.body).size).to eq(10)
