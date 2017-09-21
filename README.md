@@ -19,13 +19,13 @@ This is API that returns details about state and national parks. You can search 
 
 |Usage | METHOD       | URL       | Params |
 | --------|:------------:| ---------:| ------:|
-|See All Parks | GET    | `localhost:3000/parks` |  |
-|See A Specific Park | GET    | `localhost:3000/parks/:id` |  |
-|Search By Park Name | GET    | `localhost:3000/parks?name=` | _name_ |
-|See A Random Park | GET    | `localhost:3000/park/random` |  |
-|Create A Park | POST    | `localhost:3000/parks` | _name, city, state, category(national or state)_ |
-|Update A Park | PATCH    | `localhost:3000/parks/:id` | _name, city, state, category(national or state)_ |
-|Delete A Park | DELETE    |`localhost:3000/parks/:id`|   | |
+|See All Parks | GET    | `localhost:3000/api/v1/parks` |  |
+|See A Specific Park | GET    | `localhost:3000/api/v1/parks/:id` |  |
+|Search By Park Name | GET    | `localhost:3000/api/v1/parks?name=` | _name_ |
+|See A Random Park | GET    | `localhost:3000/api/v1/park/random` |  |
+|Create A Park | POST    | `localhost:3000/api/v1/parks` | _name, city, state, category(national or state)_ |
+|Update A Park | PATCH    | `localhost:3000/api/v1/parks/:id` | _name, city, state, category(national or state)_ |
+|Delete A Park | DELETE    |`localhost:3000/api/v1/parks/:id`|   | |
 
 
 
